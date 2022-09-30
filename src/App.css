@@ -1,6 +1,5 @@
 .App {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 20px;  
   
 }
 
@@ -9,12 +8,10 @@
   
 }
 
-
-
-.App-header {
- 
-}
-
 .App-link {
   color: #61dafb;
+}
+
+header, footer {
+ text-align: center;
 }
