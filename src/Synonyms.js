@@ -1,3 +1,4 @@
+import './Synonyms.css';
 
 function Synonyms(props){
     if(props.synonyms.length !== 0){

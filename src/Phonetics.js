@@ -1,4 +1,5 @@
 import PhoneticAudio from "./PhoneticAudio";
+import "./Phonetics.css";
 
 function Phonetics(props) {
   function playSound(url) {
@@ -9,7 +10,7 @@ function Phonetics(props) {
     <div>
       {props.phonetics.map((phonetic, index) => {
         return (
-          <div key={index}>
+          <div key={index} className="Phonetics">
             <PhoneticAudio audio={phonetic.audio} />            
             <p>{phonetic.text}</p>
           </div>

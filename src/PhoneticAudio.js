@@ -1,4 +1,4 @@
-import SpeakerIcon from "./speaker_icon.png";
+import SpeakerIcon from "./sound_icon.png";
 import "./PhoneticAudio.css";
 
 function PhoneticAudio(props) {

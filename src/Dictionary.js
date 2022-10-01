@@ -37,11 +37,11 @@ function Dictionary() {
   );
 
   return (
-    <div>
-      <div className="search-form">{form}</div>
-      <section>
+    <div className="Dictionary">
+      <section className="search-form">{form}</section>
+      <div>
         <Meanings definition={definition} />
-      </section>
+      </div>
     </div>
   );
 }
