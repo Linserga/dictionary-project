@@ -1,0 +1,8 @@
+.phonetic-sound {
+    color: blue;
+    max-width: 32px;
+}
+
+.phonetic-sound:hover {
+    color:black;
+}
