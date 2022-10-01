@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Definition from "./Definition";
+import Meanings from "./Meanings";
 import "./Dictionary.css";
 
 function Dictionary() {
@@ -36,27 +36,14 @@ function Dictionary() {
     </form>
   );
 
-  if (loaded) {
-    return (
-      <div>
-        <div className="search-form">{form}</div>
-        <section>
-          <h1 className="text-capitalize">{definition.word}</h1>
-          <h3 className="text-capitalize">{definition.phonetic}</h3>
-          {definition.meanings.map((meaning, index) => {
-            return (
-              <div>
-                <h4 key={index}>{meaning.partOfSpeech}</h4>
-                <Definition meaning={meaning} />                
-              </div>
-            );
-          })}
-        </section>
-      </div>
-    );
-  } else {
-    return <div className="search-form">{form}</div>;
-  }
+  return (
+    <div>
+      <div className="search-form">{form}</div>
+      <section>
+        <Meanings definition={definition} />
+      </section>
+    </div>
+  );
 }
 
 export default Dictionary;
